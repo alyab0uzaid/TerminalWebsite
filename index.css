@@ -1,0 +1,103 @@
+:root {
+	background-color: #131313 !important;
+}
+
+body {
+	background-color: #131313
+}
+
+
+#console {
+	position: relative;
+	font-family: courier, monospace;
+	color: #fff;
+	width:750px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:100px;
+	font-size:14px;
+	z-index: 0;
+}
+
+a {
+	color: #0bc;
+	text-decoration: none;
+}
+
+#a {
+	color: #0f0;
+}
+
+#c {
+	color: #0bc;
+}
+
+#b {
+	color: #ff0096;
+}
+
+#k {
+    	animation: change 1s;
+}
+
+#op{
+    	color: #888888
+}
+
+@keyframes change {
+    	0%  { color:  #0f0; }
+    	50% { color:  #0f0; }
+    	99% { color: black; }
+}
+
+
+#me{
+
+	width:50px;
+	height:50px;
+	position: absolute;
+	z-index: 2; 
+	animation: fadeIn 1s forwards;
+	opacity: 0; 
+}
+#fixed-content {
+    width: 100%; /* Full width */
+    text-align: center; /* Center the content, if desired */
+    margin-bottom: 20px; /* Space between the fixed content and console */
+}
+
+#console {
+    /* Console specific styles */
+	top: 60px;
+    margin: 0 auto; /* Center the console on the page */
+    /* Add your specific console styles here */
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: flex-start;
+}
+
+#dynamic-content, #fixed-content {
+    flex: 1;
+}
+
+/* General fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.item {
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Use the animation */
+}
+
+/* Individual delays */
+#me { animation-delay: 1.5s; } /* Fade in after 2 seconds */
+#item2 { animation-delay: 4s; } /* Fade in after 4 seconds */
+#item3 { animation-delay: 6s; } /* Fade in after 6 seconds */
+#item4 { animation-delay: 8s; } /* Fade in after 8 seconds */
+

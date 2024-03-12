@@ -1,0 +1,90 @@
+:root {
+	background-color: #131313 !important;
+}
+
+body {
+	background-color: #131313
+}
+
+
+#console {
+	position: relative;
+	font-family: courier, monospace;
+	color: #fff;
+	width:750px;
+	margin-left:auto;
+	margin-right:auto;
+	margin-top:100px;
+	font-size:14px;
+	z-index: 0;
+}
+
+a {
+	color: #0bc;
+	text-decoration: none;
+}
+
+#a {
+	color: #0f0;
+}
+
+#c {
+	color: #0bc;
+}
+
+#b {
+	color: #ff0096;
+}
+
+#k {
+    	animation: change 1s;
+}
+
+#op{
+    	color: #888888
+}
+
+@keyframes change {
+    	0%  { color:  #0f0; }
+    	50% { color:  #0f0; }
+    	99% { color: black; }
+}
+
+
+#me{
+	width:50px;
+	height:50px;
+	position: relative;
+	z-index: 2; 
+	top: 150px;
+	left: 274px; 
+	animation: fadeIn 1s forwards;
+	opacity: 0; 
+}
+
+
+/* General fade-in animation */
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.video {
+    opacity: 0;
+    animation: fadeIn 1s forwards; /* Use the animation */
+
+}
+
+#item1{
+	position: relative;
+	top: 262px;
+	left:340px;
+	z-index: 2;
+}
+
+/* Individual delays */
+#item1 { animation-delay: 1.5s; } /* Fade in after 2 seconds */
+#item2 { animation-delay: 4s; } /* Fade in after 4 seconds */
+#item3 { animation-delay: 6s; } /* Fade in after 6 seconds */
+#item4 { animation-delay: 8s; } /* Fade in after 8 seconds */
+
